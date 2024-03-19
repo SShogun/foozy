@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+h1 {
+    word-spacing: 10px;
+    font-family: "Bebas Neue", sans-serif;
+}
+h2 {
+    word-spacing: 10px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#bg1 {
+    background-image: url(../img/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 30rem;
+}
+#grid {
+    background-image: url(../img/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 25rem;
+    font-family: "Nunito Sans", sans-serif;
+}
+#aboutUs {
+    background-image: url(../img/backgroundFood.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Nunito Sans", sans-serif;
+}
