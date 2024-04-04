@@ -10,11 +10,16 @@ function App() {
   const [cart, setCart] = useState([]);
 
   const handleClick = (item) => {
-    if (cart.some((product) => item.id === product.id)) {
-      return;
-    }
-  
-    setCart((prevCart) => [...prevCart, item]);
+    let isPresent = false;
+    cart.forEach((product) => {
+      if(product.id === item.id) {
+        isPresent = true;
+      }
+    })
+      if(isPresent) {
+        return ;
+      }
+      setCart([...cart, item]);
   };
 
   return (
