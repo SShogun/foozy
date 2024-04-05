@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 
-export default function CustomizedSnackbars() {
+export default function CustomSnackbar() {
   const [open, setOpen] = React.useState(false);
 
   const handleClick = () => {
@@ -20,8 +20,8 @@ export default function CustomizedSnackbars() {
 
   return (
     <div>
-      <Button onClick={handleClick} variant='contained'>Choose Date</Button>
-      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+      <Button onClick={handleClick} variant='contained'>Choose Date & Time</Button>
+      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose} className='w-32'>
         <Alert
           onClose={handleClose}
           severity="success"
