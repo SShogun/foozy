@@ -1,7 +1,6 @@
 import TextField from '@mui/material/TextField';
 import Divider from '@mui/material/Divider';
-import 'react-date-range/dist/styles.css'; // main style file
-import ReactDatePicker from '../components/ReactDatePicker';
+import ReactDateTimePicker from '../components/ReactDateTimePicker';
 const Reservation = () => {
     return ( 
         <div className="h-[100vh] w-100 bg-[rgba(255,255,255,0.9)] flex justify-center pt-10 flex-row">
@@ -29,7 +28,7 @@ const Reservation = () => {
                     <span className='flex items-center h-5 col-span-2'>
                         <h1 className='h-[20px] text-7xl'>Reservation</h1>
                     </span>
-                    <ReactDatePicker />
+                    <ReactDateTimePicker />
                 </div>
 
             </div>

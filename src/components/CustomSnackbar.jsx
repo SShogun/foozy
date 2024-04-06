@@ -20,13 +20,13 @@ export default function CustomSnackbar() {
 
   return (
     <div>
-      <Button onClick={handleClick} variant='contained'>Choose Date & Time</Button>
-      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose} className='w-32'>
+      <Button onClick={handleClick} color="success" variant='contained' sx={{marginTop: "10px"}}>Choose Date & Time</Button>
+      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
         <Alert
           onClose={handleClose}
           severity="success"
           variant="filled"
-          sx={{ width: '100%' }}
+          sx={{width: "100%"}}
           autoHideDuration={5000}
         >
           Your date has been accepted
